@@ -62,7 +62,7 @@ export default {
       this.operatorclicked=true;
     },
     divide(){
-      this.operator = (a,b) => a/b;
+      this.operator = (a,b) => b/a;
       this.setPrevious();
     },
     multi(){
@@ -70,7 +70,7 @@ export default {
       this.setPrevious();
     },
     sub(){
-      this.operator = (a,b) => a-b;
+      this.operator = (a,b) => b-a;
       this.setPrevious();
     },
     add(){

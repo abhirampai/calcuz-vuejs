@@ -50,7 +50,11 @@ export default {
         this.current='';
         this.operatorclicked = false;
       }
-      this.current=`${this.current}${number}`
+      if(this.current === '0'){
+      this.current=`${number}`}
+      else{
+        this.current=`${this.current}${number}`
+      }
     },
     dot(){
       if(this.current.indexOf('.')===-1){
@@ -99,7 +103,8 @@ export default {
 .display
 {
   grid-column: 1 / 5;
-  background-color: blueviolet;
+  background-color: yellow;
+  border:1px solid black;
 
 }
 .zero
